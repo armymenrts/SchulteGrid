@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_win"
+    android:background="#333232"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="yuhui.a25.a441.schultegrid.Win">
+
+    <TextView
+        android:text="3*3最快时间："
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shimmerButton"
+        android:layout_marginTop="29dp"
+        android:id="@+id/timethree" />
+
+    <com.romainpiel.shimmer.ShimmerTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:text="233"
+        android:textColor="#0f0"
+        android:layout_below="@+id/shimmerTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:id="@+id/score"
+        android:gravity="center"/>
+
+    <com.romainpiel.shimmer.ShimmerButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score"
+        android:textSize="30dp"
+        android:text="重新开始"
+        app:reflectionColor="#f5e900"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:id="@+id/shimmerButton" />
+
+    <com.romainpiel.shimmer.ShimmerTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:text="     恭喜过关！\n您所用的时间为"
+        android:textColor="#e90303"
+        app:reflectionColor="#0029f5"
+        android:layout_marginTop="35dp"
+        android:id="@+id/shimmerTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="5*5最快时间："
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timefive"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/timefour"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="6*6最快时间："
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timesix"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/timefive"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="4*4最快时间："
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timefour"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/timethree"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
